@@ -6,6 +6,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Inter', sans-serif;
+    color: white;
 }
 /* Import Example (Plus Jakarta Sans) */
 
@@ -59,7 +60,8 @@ body{
 }
 
 .nav-element li a{
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 700;
     text-transform: uppercase;
     font-weight: 500;
     text-decoration: none;
@@ -71,11 +73,10 @@ body{
 
 .nav-element li a.active{
     color: rgb(20, 71, 7);
-    font-weight: 500;
 }
 
 .nav-element li a:hover {
-    color: rgb(20, 71, 7); 
+    color: rgb(20, 71, 7);
 }
 
 .buton2{
@@ -156,6 +157,17 @@ body{
     margin: 20px auto;
     margin-top: 30px;
     border-radius: 100px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    box-shadow: 0 5px 12px  rgba(20, 71, 7, 0.719);
+  }
+  50% {
+    /* Shadow becomes wider and lighter as the button "lifts" */
+    box-shadow: 0 5px 20px rgba(20, 71, 7, 0.404);
+  }
 }
 
 .fa-solid{
@@ -205,14 +217,13 @@ body{
 
 .tt {
     width: 35%;
-    height: 50%;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 30px;
-    /* gap: 10px; */
     border-radius: 50px;
-    /* padding-inline: 20px; */
+    padding-right: 2px;
     padding-left: 25px;
     color: #ffffff;
     outline: none;
@@ -237,13 +248,58 @@ body{
     backdrop-filter: blur(12px);           /* The "frosted" effect */
     -webkit-backdrop-filter: blur(12px);    /* Support for Safari */
     border: none;
+    /* margin-right: 10px; */
     transition: background-color 0.3s;
     width: 170px;
-    height: 100%;
+    height: 56px;
     border-radius: 50px;
     color: white;
     font-size: 15px;
 }
 .ask-button:hover{
     background-color: rgb(26, 120, 3);
+}
+
+.Cards-container{
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+}
+
+.card1{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 95%;
+    background-color: rgb(20, 71, 7, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.card2{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 95%;
+    background-color: rgb(20, 71, 7, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.card3{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 95%;
+    background-color: rgb(20, 71, 7, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
