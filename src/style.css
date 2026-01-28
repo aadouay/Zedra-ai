@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+/* Import Example (Plus Jakarta Sans) */
+
+body{
+    background-color: black;
+}
+
+.header{
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);           /* The "frosted" effect */
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width : 800px; /* that's for update with the small screen */
+    height: 60px;
+    margin: 25px auto; /* Centers the block itself */
+    align-items: center;
+    padding-left: 18px;
+    padding-right: 2px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    top: 0;
+}
+
+.logo_name{
+    display: flex;
+    /* font-family: 'Plus Jakarta Sans', sans-serif; */
+    gap : 4px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+    letter-spacing: -1px;
+}
+.logo_name span{
+    color: rgb(35, 141, 106);
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.nav-element{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-element li a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+    transition: color 0.3s;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Outfit:wght@100..900&display=swap');
+
+.nav-element li a.active{
+    color: rgb(20, 71, 7);
+    font-weight: 500;
+}
+
+.nav-element li a:hover {
+    color: rgb(20, 71, 7); 
+}
+
+.buton2{
+    background-color: rgb(20, 71, 7);
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    width: 120px;
+    /* font-family: 'Inter', sans-serif; */
+    font-size: 14px;
+    font-weight: 700;
+    height: 56px;
+    border-radius: 50px;
+    padding-inline: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+    font-family: "Outfit", sans-serif;
+}
+
+.buton2:hover{
+    background-color: rgb(26, 100, 7);
+}
+
+
+.video-container {
+    /* position: fixed; Stays in place during scroll */
+    inset: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 80vh;
+    position: relative;
+}
+
+
+/* Optional: Add an overlay to make text easier to read */
+.video-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.555); /* Darkens the video slightly */
+    backdrop-filter: blur(7px);
+}
+
+
+.content{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    /* background-color: rgba(52, 59, 59, 0.219); */
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+.info{
+    display: flex;
+    gap: 7px;
+    background: rgba(20, 71, 7, 0.356); /* Very faint white */
+    backdrop-filter: blur(12px);           /* The "frosted" effect */
+    -webkit-backdrop-filter: blur(12px);    /* Support for Safari */
+    width: 24%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 20px auto;
+    margin-top: 30px;
+    border-radius: 100px;
+}
+
+.fa-solid{
+    color: green;
+    font-size: 12px;
+}
+
+.msg{
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 1px;
+
+}
+
+.main-title1{
+    color: #ffffff;
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+.main-title2{
+    color: #ffffff;
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+.description{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.platform-description{
+    margin-top: 25px;
+    color: #6b6b6b;
+    width: 50%;
+    text-align: center;
+}
+.platform-description span{
+    color: rgb(21, 97, 2);
+}
+
+.ask-ai{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tt {
+    width: 35%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    /* gap: 10px; */
+    border-radius: 50px;
+    /* padding-inline: 20px; */
+    padding-left: 25px;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+.details-input{
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    width: 100%;
+}
+
+.ask-button{
+    background-color:  rgb(20, 71, 7);
+    backdrop-filter: blur(12px);           /* The "frosted" effect */
+    -webkit-backdrop-filter: blur(12px);    /* Support for Safari */
+    border: none;
+    transition: background-color 0.3s;
+    width: 170px;
+    height: 100%;
+    border-radius: 50px;
+    color: white;
+    font-size: 15px;
+}
+.ask-button:hover{
+    background-color: rgb(26, 120, 3);
+}
