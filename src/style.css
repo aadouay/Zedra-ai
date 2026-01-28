@@ -33,7 +33,7 @@ body{
     left: 50%;
     right: 50%;
     transform: translateX(-50%);
-    z-index: 1;
+    z-index: 999999;
     top: 0;
 }
 
@@ -108,8 +108,7 @@ body{
     inset: 0;
     max-width: 100%;
     overflow: hidden;
-    max-height: 80vh;
-    position: relative;
+    height: 80vh;
 }
 
 
@@ -158,6 +157,8 @@ body{
     margin-top: 30px;
     border-radius: 100px;
     animation: float 3s ease-in-out infinite;
+    padding-inline: 14px;
+    min-width: max-content;
 }
 
 @keyframes float {
@@ -186,11 +187,13 @@ body{
     color: #ffffff;
     font-size: 60px;
     letter-spacing: 2px;
+    text-align: center;
 }
 .main-title2{
     color: #ffffff;
     font-size: 60px;
     letter-spacing: 2px;
+    text-align: center;
 }
 .description{
     width: 100%;
@@ -204,6 +207,13 @@ body{
     width: 50%;
     text-align: center;
 }
+
+@media screen and (max-width: 1000px) {
+    .platform-description {
+        width: 94%;
+    }
+}
+
 .platform-description span{
     color: rgb(21, 97, 2);
 }
@@ -216,7 +226,8 @@ body{
 }
 
 .tt {
-    width: 35%;
+    width: 100%;
+    max-width: 600px;
     height: 60px;
     display: flex;
     align-items: center;
@@ -268,14 +279,17 @@ body{
     width: 100%;
     height: 100%;
     gap: 30px;
+    position:absolute;
+    bottom: -500px;
 }
 
 .card1{
     display: flex;
     justify-content: center;
     width: 250px;
-    height: 95%;
+    height: 300px;
     background-color: rgb(20, 71, 7, 0.1);
+    background: white;
     border-radius: 15px;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -284,8 +298,9 @@ body{
 .card2{
     display: flex;
     justify-content: center;
+    background: white;
     width: 250px;
-    height: 95%;
+    height: 300px;
     background-color: rgb(20, 71, 7, 0.1);
     border-radius: 15px;
     backdrop-filter: blur(20px);
@@ -295,8 +310,9 @@ body{
 .card3{
     display: flex;
     justify-content: center;
+    background: white;
     width: 250px;
-    height: 95%;
+    height: 300px;
     background-color: rgb(20, 71, 7, 0.1);
     border-radius: 15px;
     backdrop-filter: blur(20px);
