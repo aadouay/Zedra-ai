@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -8,26 +9,27 @@
   <link rel="icon" href="./assets/zedra-logo.png" type="image/png">
   <title>Zedra Ai</title>
 </head>
+
 <body>
 
   <div class="video-container">
 
-    <video autoplay muted loop playsinline id="bg-video">
-      <source src="./assets/hero.mp4" type="video/mp4" height="80vh">
+    <video autoplay muted loop playsinline id="bg-video" style="object-fit: cover; width: 100%; height: 100%;">
+      <source src="./assets/hero.mp4" type="video/mp4">
     </video>
 
 
     <div class="header">
 
       <a href="/">
-        <img class="logo"
-          src="./assets/zedra-logo.png"
-          width="40"
-          alt="Zedra Logo"
-        />
+        <img class="logo" src="./assets/zedra-logo.png" width="40" alt="Zedra Logo" />
       </a>
 
       <div class="header-sction">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
         <div class="nav">
           <a class="nav-a" href="/#Pricing"> Pricing </a>
           <a class="nav-a" href="/#Models"> Models </a>
@@ -35,8 +37,11 @@
         </div>
         <div class="header-sction-buttons">
           <a class="star" href="/#github">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+              </path>
             </svg>
             <span class="star-text"> star </span>
             <span class="star-counter"> 72 </span>
@@ -47,56 +52,56 @@
 
     </div>
 
-        <div class="content">
-            <div class="info">
-                <i class="fa-solid fa-bolt"></i>
-                <p class="msg">Your 24/7 AI tutor for mastering Bac and beyond.</p> <!-- i want a short info of our Ai module  like fast ....-->
-            </div>
-            <h1 class="main-title1">A Touch of Class in</h1>
-            <h1 class="main-title2">Your Every Step Decision.</h1>
-            <div>
+    <div class="content">
+      <div class="info">
+        <i class="fa-solid fa-bolt"></i>
+        <p class="msg">Your 24/7 AI tutor for mastering Bac and beyond.</p>
+        <!-- i want a short info of our Ai module  like fast ....-->
+      </div>
+      <h1 class="main-title1">A Touch of Class in</h1>
+      <h1 class="main-title2">Your Every Step Decision.</h1>
+      <div>
 
-            <div class="description">
-                <p class="platform-description">
-                    Empowering students from <span>Bac to Bac+1</span> with instant academic support. 
-                    Zedra AI simplifies your study routine, providing precise answers and 24/7 guidance 
-                    to help you master your curriculum with confidence.
-                </p>    
-            </div>
-            <div class="ask-ai">
-                <form action="GET" class="tt">
-                    <!-- <i class="fa-solid fa-wand-magic-sparkles spark-icon"></i> -->
-                    <input type="text" 
-                        placeholder="Enter your email address"
-                        class="details-input"
-                        required>
+        <div class="description">
+          <p class="platform-description">
+            Empowering students from <span>Bac to Bac+1</span> with instant academic support.
+            Zedra AI simplifies your study routine, providing precise answers and 24/7 guidance
+            to help you master your curriculum with confidence.
+          </p>
+        </div>
+        <div class="ask-ai">
+          <form method="GET" action="#" class="tt">
+            <!-- <i class="fa-solid fa-wand-magic-sparkles spark-icon"></i> -->
+            <input type="email" placeholder="Enter your email address" class="details-input" required>
 
-                    <button type="submit" class="ask-button">Sign up for Zedra</button>
-                </form>                
-            </div>
+            <button type="submit" class="ask-button">Sign up for Zedra</button>
+          </form>
         </div>
-        <div class="Cards-container">
-            <div class="card1">
-              <p class="speed-title">Ultra-Fast AI Reasoning</p>
-              <p class="speed-desc">Processes questions instantly while maintaining high accuracy.</p>
-              <img src="./assets/speed-think-removebg.png" alt="speed icon" class="speed">
-              <!-- <svg data-testid="geist-icon" height="50" stroke-linejoin="round" viewBox="0 0 16 16" width="50" style="color: currentcolor;" class="speed"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.99107 1.57556C7.01494 1.27234 4.92586 1.88176 3.40381 3.40381C0.865398 5.94221 0.865398 10.0578 3.40381 12.5962L3.93414 13.1265L2.87348 14.1872L2.34315 13.6569C-0.781049 10.5327 -0.781049 5.46734 2.34315 2.34315C4.40973 0.276566 7.32564 -0.423021 9.96727 0.244385L8.99107 1.57556ZM13.8304 5.12254C15.0295 7.55167 14.6181 10.5743 12.5962 12.5962L12.0659 13.1265L13.1265 14.1872L13.6569 13.6569C16.334 10.9797 16.7171 6.87715 14.8061 3.79209L13.8304 5.12254ZM8 9C8.55228 9 9 8.55228 9 8C9 7.44772 8.55228 7 8 7C7.44772 7 7 7.44772 7 8C7 8.55228 7.44772 9 8 9ZM8 10.5C9.38071 10.5 10.5 9.38071 10.5 8C10.5 7.42572 10.3064 6.89666 9.98082 6.47456L13.4475 2.14119C13.0815 1.80067 12.6834 1.49405 12.2585 1.22632L8.74837 5.61394C8.51209 5.53991 8.2607 5.5 8 5.5C6.61929 5.5 5.5 6.61929 5.5 8C5.5 9.38071 6.61929 10.5 8 10.5Z" fill="currentColor"></path></svg> -->
-            </div>
-            <div class="card2">
-              <p class="speed-title">Bac-Specific Accuracy</p>
-              <p class="speed-desc">Trained on national exam patterns to ensure your answers hit the mark.</p>
-              <img src="./assets/prepar-removebg.png" alt="preparation icon" class="prepar">
-              <!-- <svg data-testid="geist-icon" height="50" stroke-linejoin="round" viewBox="0 0 16 16" width="50" style="color: currentcolor;" class="speed"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.99107 1.57556C7.01494 1.27234 4.92586 1.88176 3.40381 3.40381C0.865398 5.94221 0.865398 10.0578 3.40381 12.5962L3.93414 13.1265L2.87348 14.1872L2.34315 13.6569C-0.781049 10.5327 -0.781049 5.46734 2.34315 2.34315C4.40973 0.276566 7.32564 -0.423021 9.96727 0.244385L8.99107 1.57556ZM13.8304 5.12254C15.0295 7.55167 14.6181 10.5743 12.5962 12.5962L12.0659 13.1265L13.1265 14.1872L13.6569 13.6569C16.334 10.9797 16.7171 6.87715 14.8061 3.79209L13.8304 5.12254ZM8 9C8.55228 9 9 8.55228 9 8C9 7.44772 8.55228 7 8 7C7.44772 7 7 7.44772 7 8C7 8.55228 7.44772 9 8 9ZM8 10.5C9.38071 10.5 10.5 9.38071 10.5 8C10.5 7.42572 10.3064 6.89666 9.98082 6.47456L13.4475 2.14119C13.0815 1.80067 12.6834 1.49405 12.2585 1.22632L8.74837 5.61394C8.51209 5.53991 8.2607 5.5 8 5.5C6.61929 5.5 5.5 6.61929 5.5 8C5.5 9.38071 6.61929 10.5 8 10.5Z" fill="currentColor"></path></svg> -->
-            </div>
-            <div class="card3">
-              <p class="speed-title">Skill Tracking</p>
-              <p class="speed-desc">Zedra tracks your weak points and suggests custom revision plans.</p>
-              <img src="./assets/skil-removebg.png" alt="skill tracking icon" class="skill">
-              <!-- <svg data-testid="geist-icon" height="50" stroke-linejoin="round" viewBox="0 0 16 16" width="50" style="color: currentcolor;" class="speed"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.99107 1.57556C7.01494 1.27234 4.92586 1.88176 3.40381 3.40381C0.865398 5.94221 0.865398 10.0578 3.40381 12.5962L3.93414 13.1265L2.87348 14.1872L2.34315 13.6569C-0.781049 10.5327 -0.781049 5.46734 2.34315 2.34315C4.40973 0.276566 7.32564 -0.423021 9.96727 0.244385L8.99107 1.57556ZM13.8304 5.12254C15.0295 7.55167 14.6181 10.5743 12.5962 12.5962L12.0659 13.1265L13.1265 14.1872L13.6569 13.6569C16.334 10.9797 16.7171 6.87715 14.8061 3.79209L13.8304 5.12254ZM8 9C8.55228 9 9 8.55228 9 8C9 7.44772 8.55228 7 8 7C7.44772 7 7 7.44772 7 8C7 8.55228 7.44772 9 8 9ZM8 10.5C9.38071 10.5 10.5 9.38071 10.5 8C10.5 7.42572 10.3064 6.89666 9.98082 6.47456L13.4475 2.14119C13.0815 1.80067 12.6834 1.49405 12.2585 1.22632L8.74837 5.61394C8.51209 5.53991 8.2607 5.5 8 5.5C6.61929 5.5 5.5 6.61929 5.5 8C5.5 9.38071 6.61929 10.5 8 10.5Z" fill="currentColor"></path></svg> -->
-            </div>
+      </div>
+      <div class="Cards-container">
+        <div class="card1">
+          <p class="speed-title">Ultra-Fast AI Reasoning</p>
+          <p class="speed-desc">Processes questions instantly while maintaining high accuracy.</p>
+          <img src="./assets/speed-think-removebg.png" alt="speed icon" class="speed">
+          <!-- <svg data-testid="geist-icon" height="50" stroke-linejoin="round" viewBox="0 0 16 16" width="50" style="color: currentcolor;" class="speed"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.99107 1.57556C7.01494 1.27234 4.92586 1.88176 3.40381 3.40381C0.865398 5.94221 0.865398 10.0578 3.40381 12.5962L3.93414 13.1265L2.87348 14.1872L2.34315 13.6569C-0.781049 10.5327 -0.781049 5.46734 2.34315 2.34315C4.40973 0.276566 7.32564 -0.423021 9.96727 0.244385L8.99107 1.57556ZM13.8304 5.12254C15.0295 7.55167 14.6181 10.5743 12.5962 12.5962L12.0659 13.1265L13.1265 14.1872L13.6569 13.6569C16.334 10.9797 16.7171 6.87715 14.8061 3.79209L13.8304 5.12254ZM8 9C8.55228 9 9 8.55228 9 8C9 7.44772 8.55228 7 8 7C7.44772 7 7 7.44772 7 8C7 8.55228 7.44772 9 8 9ZM8 10.5C9.38071 10.5 10.5 9.38071 10.5 8C10.5 7.42572 10.3064 6.89666 9.98082 6.47456L13.4475 2.14119C13.0815 1.80067 12.6834 1.49405 12.2585 1.22632L8.74837 5.61394C8.51209 5.53991 8.2607 5.5 8 5.5C6.61929 5.5 5.5 6.61929 5.5 8C5.5 9.38071 6.61929 10.5 8 10.5Z" fill="currentColor"></path></svg> -->
         </div>
+        <div class="card2">
+          <p class="speed-title">Bac-Specific Accuracy</p>
+          <p class="speed-desc">Trained on national exam patterns to ensure your answers hit the mark.</p>
+          <img src="./assets/prepar-removebg.png" alt="preparation icon" class="prepar">
+          <!-- <svg data-testid="geist-icon" height="50" stroke-linejoin="round" viewBox="0 0 16 16" width="50" style="color: currentcolor;" class="speed"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.99107 1.57556C7.01494 1.27234 4.92586 1.88176 3.40381 3.40381C0.865398 5.94221 0.865398 10.0578 3.40381 12.5962L3.93414 13.1265L2.87348 14.1872L2.34315 13.6569C-0.781049 10.5327 -0.781049 5.46734 2.34315 2.34315C4.40973 0.276566 7.32564 -0.423021 9.96727 0.244385L8.99107 1.57556ZM13.8304 5.12254C15.0295 7.55167 14.6181 10.5743 12.5962 12.5962L12.0659 13.1265L13.1265 14.1872L13.6569 13.6569C16.334 10.9797 16.7171 6.87715 14.8061 3.79209L13.8304 5.12254ZM8 9C8.55228 9 9 8.55228 9 8C9 7.44772 8.55228 7 8 7C7.44772 7 7 7.44772 7 8C7 8.55228 7.44772 9 8 9ZM8 10.5C9.38071 10.5 10.5 9.38071 10.5 8C10.5 7.42572 10.3064 6.89666 9.98082 6.47456L13.4475 2.14119C13.0815 1.80067 12.6834 1.49405 12.2585 1.22632L8.74837 5.61394C8.51209 5.53991 8.2607 5.5 8 5.5C6.61929 5.5 5.5 6.61929 5.5 8C5.5 9.38071 6.61929 10.5 8 10.5Z" fill="currentColor"></path></svg> -->
+        </div>
+        <div class="card3">
+          <p class="speed-title">Skill Tracking</p>
+          <p class="speed-desc">Zedra tracks your weak points and suggests custom revision plans.</p>
+          <img src="./assets/skil-removebg.png" alt="skill tracking icon" class="skill">
+          <!-- <svg data-testid="geist-icon" height="50" stroke-linejoin="round" viewBox="0 0 16 16" width="50" style="color: currentcolor;" class="speed"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.99107 1.57556C7.01494 1.27234 4.92586 1.88176 3.40381 3.40381C0.865398 5.94221 0.865398 10.0578 3.40381 12.5962L3.93414 13.1265L2.87348 14.1872L2.34315 13.6569C-0.781049 10.5327 -0.781049 5.46734 2.34315 2.34315C4.40973 0.276566 7.32564 -0.423021 9.96727 0.244385L8.99107 1.57556ZM13.8304 5.12254C15.0295 7.55167 14.6181 10.5743 12.5962 12.5962L12.0659 13.1265L13.1265 14.1872L13.6569 13.6569C16.334 10.9797 16.7171 6.87715 14.8061 3.79209L13.8304 5.12254ZM8 9C8.55228 9 9 8.55228 9 8C9 7.44772 8.55228 7 8 7C7.44772 7 7 7.44772 7 8C7 8.55228 7.44772 9 8 9ZM8 10.5C9.38071 10.5 10.5 9.38071 10.5 8C10.5 7.42572 10.3064 6.89666 9.98082 6.47456L13.4475 2.14119C13.0815 1.80067 12.6834 1.49405 12.2585 1.22632L8.74837 5.61394C8.51209 5.53991 8.2607 5.5 8 5.5C6.61929 5.5 5.5 6.61929 5.5 8C5.5 9.38071 6.61929 10.5 8 10.5Z" fill="currentColor"></path></svg> -->
+        </div>
+      </div>
+    </div> <!-- Closes .content -->
 
   </div>
 
 </body>
+
 </html>
